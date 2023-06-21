@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon.png"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <title>HTML with SASS Template</title>
+  </head>
+  <body>
+    <div class="layout">
+      <section class="hero">
+        <img
+          id="heroImg"
+          class="hero__img"
+          src="./assets/images/background.jpg"
+          alt="Paddle Board on the Santa Fe River"
+        />
+        <div class="hero__overlay"></div>
+        <div class="hero__heading">
+          <h1>
+            High Springs <br />
+            River Club
+          </h1>
+          <h2>Discover the serene beauty of northern Florida's waterways.</h2>
+        </div>
+      </section>
+      <section class="action">
+        <div class="action__call">
+          <div class="action__call__text">
+            <p>
+              Join High Springs River Club today and embark on a paddling
+              adventure like no other. Immerse yourself in the tranquility of
+              Florida's waterways, surrounded by breathtaking natural beauty.
+              Create lasting memories with loved ones as you paddle through
+              pristine waters and discover hidden gems along the way.
+            </p>
+          </div>
+        </div>
+        <div class="action__execute">
+          <h3>Start your adventure today!</h3>
+          <button id="btn" class="btn">Join</button>
+        </div>
+      </section>
+    </div>
+
+    <!-- Modal -->
+    <div id="actionModal" class="modal">
+      <div class="modal__content">
+        <button id="closeBtn" class="modal__close">&times;</button>
+        <div>
+          <p>
+            When I'm not at work I enjoy the outdoors. A trip down the river or
+            a bike ride through the woods helps me relax.
+          </p>
+          <p>Photo credit: Tim O'Brien</p>
+        </div>
+      </div>
+    </div>
+    <script src="./js/button.js"></script>
+  </body>
+</html>

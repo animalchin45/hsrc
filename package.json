@@ -1,0 +1,10 @@
+{
+  "name": "phos-homework",
+  "version": "1.0.0",
+  "description": "High Springs River Club",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Tim O'Brien",
+  "license": "ISC",
+  "dependencies": {}
+}
