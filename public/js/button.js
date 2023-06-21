@@ -1,3 +1,6 @@
+// Image Alt Text
+const heroImg = document.getElementById('heroImg')
+
 // Modal
 const modal = document.getElementById('actionModal')
 
@@ -8,7 +11,10 @@ const btn = document.getElementById('btn')
 const closeBtn = document.getElementById('closeBtn')
 
 // User clicks open button
-btn.onclick = () => (modal.style.display = 'flex')
+btn.onclick = () => {
+  modal.style.display = 'flex'
+  document.getElementById('alt').innerHTML = heroImg.alt
+}
 
 // User clicks close button
 closeBtn.onclick = () => (modal.style.display = 'none')
