@@ -15,6 +15,14 @@ html {
   font-size: 62.5%;
 }
 
+a {
+  font-size: 1.6rem;
+}
+
+.site-main {
+  padding: 0;
+}
+
 p {
   font-size: 1.6rem;
 }
@@ -35,11 +43,15 @@ h3 {
   margin-bottom: 2rem;
 }
 
+h4 {
+  font-size: 1.8rem;
+}
+
 /* LAYOUT */
 
 .layout {
   display: grid;
-  grid-template-rows: 80rem max-content;
+  grid-template-rows: 80rem repeat(2, max-content);
   min-width: calc(100vw - 1.7rem);
 }
 
@@ -142,6 +154,33 @@ h2 {
   flex-direction: column;
   grid-column: 2 / 3;
   justify-content: center;
+}
+
+/* POST */
+
+.post-list {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.post {
+  display: grid;
+  grid-template-columns: 22rem minmax(18rem, 30rem);
+  grid-template-rows: 5rem 10rem 5rem;
+  width: 100%;
+}
+
+.post__image {
+  border: none;
+  border-radius: 20rem;
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+  width: 20rem;
+}
+
+.post__bio {
+  line-height: 1.75rem;
 }
 
 /* MODAL */
