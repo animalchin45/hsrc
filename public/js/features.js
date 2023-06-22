@@ -25,3 +25,16 @@ window.onclick = (event) => {
     modal.style.display = 'none'
   }
 }
+
+// Mobile Image Swap - Change path when using on wordpress!
+window.addEventListener('resize', () => {
+  const width = this.document.documentElement.clientWidth
+
+  if (width < 1200) {
+    heroImg.src = './assets/images/hero-mobile.jpg'
+    heroImg.alt = 'Mobile Image - Gator Chomp!'
+  } else {
+    heroImg.src = './assets/images/hero.jpg'
+    heroImg.alt = 'Desktop Image - Paddle down the Santa Fe'
+  }
+})
