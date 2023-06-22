@@ -26,11 +26,24 @@ window.onclick = (event) => {
   }
 }
 
+// Set hero image on page load  - Change path when using on wordpress!
+window.addEventListener('load', () => {
+  const width = this.document.documentElement.clientWidth
+
+  if (width <= 1200) {
+    heroImg.src = './assets/images/hero-mobile.jpg'
+    heroImg.alt = 'Mobile Image - Gator Chomp!'
+  } else {
+    heroImg.src = './assets/images/hero.jpg'
+    heroImg.alt = 'Desktop Image - Paddle down the Santa Fe'
+  }
+})
+
 // Mobile Image Swap - Change path when using on wordpress!
 window.addEventListener('resize', () => {
   const width = this.document.documentElement.clientWidth
 
-  if (width < 1200) {
+  if (width <= 1200) {
     heroImg.src = './assets/images/hero-mobile.jpg'
     heroImg.alt = 'Mobile Image - Gator Chomp!'
   } else {

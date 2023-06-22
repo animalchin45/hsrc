@@ -158,29 +158,34 @@ h4 {
 
 /* POST */
 
-.post-list {
-  display: flex;
-  justify-content: center;
-  width: 100vw;
-}
-
 .post {
   display: grid;
-  grid-template-columns: 22rem minmax(18rem, 30rem);
+  grid-template-columns: 20rem minmax(18rem, 30rem);
   grid-template-rows: 5rem 10rem 5rem;
-  width: 100%;
+  padding: 1rem;
+  width: 50rem;
 }
 
 .post__image {
   border: none;
-  border-radius: 20rem;
+  border-radius: 10rem;
   grid-column: 1 / 2;
-  grid-row: 1 / -1;
-  width: 20rem;
+  grid-row: 1 / 4;
+  padding: 3rem;
+  width: 100%;
+}
+
+.post__name {
+  grid-column: 2 / 3;
 }
 
 .post__bio {
+  grid-column: 2 / 3;
   line-height: 1.75rem;
+}
+
+.post__date {
+  grid-column: 2 / 3;
 }
 
 /* MODAL */
