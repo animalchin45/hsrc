@@ -79,14 +79,14 @@ h4 {
   font-size: 5rem;
   text-transform: uppercase;
   transform: translate(-2rem, -2rem);
-  transition: all 2s ease-in-out;
+  transition: transform 2s ease-in-out;
 }
 
 .hero__subtitle {
   font-size: 2rem;
   text-transform: uppercase;
   transform: translate(4.5rem, 2rem);
-  transition: all 2s ease-in-out;
+  transition: transform 2s ease-in-out;
 }
 
 .hero:hover .hero__title {
@@ -123,7 +123,7 @@ h4 {
   object-fit: cover;
   object-position: center;
   transform: scale(1);
-  transition: all 5s ease-in-out;
+  transition: transform 5s ease-in-out;
   width: 100%;
 }
 
